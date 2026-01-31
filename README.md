@@ -1,0 +1,17 @@
+COMP304 - Operating Systems
+
+Shell project template
+
+My references
+
+https://medium.com/@deeppadmani98.2021/understanding-the-proc-file-system-in-linux-90746e3ba76a
+I used this to get more knowledge on proc file system and used it to learn how the basics of the code works.
+
+https://unix.stackexchange.com/questions/332948/how-does-lookup-in-path-work-under-the-hood
+I got knowledge from this for my path search logic.
+
+https://www.kernel.org/doc/html/latest/RCU/whatisRCU.html
+I learned rcu and the functions I can use in my project for rcu.
+
+https://stackoverflow.com/questions/19099663/how-to-correctly-use-fork-exec-wait
+I looked at this to learn more about fork exec wait logic.
