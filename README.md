@@ -1,6 +1,6 @@
 This project is an interactive Unix-style operating system shell, called stash in C. After executing stash , it will read commands from the
 user via console (i.e. stdin) or a file and execute them. Some of these commands will be builtin commands, i.e., specific to stash and implemented in the same executable binary,
-while it should be able to launch other commands which are available as part of your own linux system.
+while it should be able to launch other commands which are available as part of your own linux system. This is a project done in my COMP304 course.
 
 My references
 
