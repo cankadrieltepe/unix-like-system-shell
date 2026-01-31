@@ -1,6 +1,18 @@
-This project is an interactive Unix-style operating system shell, called stash in C. After executing stash , it will read commands from the
-user via console (i.e. stdin) or a file and execute them. Some of these commands will be builtin commands, i.e., specific to stash and implemented in the same executable binary,
-while it should be able to launch other commands which are available as part of your own linux system. This is a project done in my COMP304 course.
+# stash — Unix-Style Shell (COMP 304 Project 1)
+
+`stash` is an interactive Unix-style shell implemented in **C** for **COMP 304 – Operating Systems (Fall 2025)**.  
+It reads commands from **stdin** (interactive mode) or from a **.sh script file** (script mode) and executes them using `fork()` + `execv()` (with manual PATH resolution).
+
+## Features (Project Requirements)
+- Built-in commands implemented inside `stash`
+- Execute external Linux programs via `fork()` + `execv()` (no `exec*p`)
+- Script execution: run commands line-by-line from a `.sh` file
+- Auto-complete with `TAB` using executables from `PATH`
+- I/O redirection: `>`, `>>`, `<`
+- Piping: `cmd1 | cmd2 | cmd3 | ...`
+- Command history (arrow keys + `history` built-in)
+- `lsfd <PID>` built-in using a **Linux kernel module** + `/proc` communication  
+  - `stash` loads the module at runtime if not loaded, and unloads it on exit if it is the last instance
 
 My references
 
